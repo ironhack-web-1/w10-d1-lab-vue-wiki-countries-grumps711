@@ -1,5 +1,8 @@
 <template>
-  
+  <router-link> a </router-link>
+  <router-link> b </router-link>
+  <router-link> c </router-link>
+
 </template>
 
 <script>
