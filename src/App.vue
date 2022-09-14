@@ -1,25 +1,37 @@
 <template>
-  <div className="app">
-    <header className="app-header">
-      <p>
-        Edit <code>src/main.js</code> and save to reload.
-      </p>
-    </header>
+  <div class="app">
+    <navbar/>
   </div>
+
+  <router-view/>
 </template>
+
+<script>
+import navbar from "./components/Navbar.vue";
+import countrydetails from "./components/CountryDetails.vue";
+import countrieslist from "./components/CountriesList.vue";
+
+export default {
+  components: {
+    navbar,
+    countrydetails,
+    countrieslist,
+  },
+};
+</script>
 
 <style>
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -61,5 +73,4 @@ code {
     transform: rotate(360deg);
   }
 }
-
 </style>
